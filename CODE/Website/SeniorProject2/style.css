@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+} 
+/* Set height of body and the document to 100% */
+body, html {
+    background-color: rgb(9, 12, 1);
+    /* background-image: url("img/lightblue.jpg"); */
+    height: 60%;
+    margin: 0;
+    font-family: Arial;
+  }
+.header{
+    /* background-color: rgb(126, 172, 19); */
+    background-image: url("img/darkblue.jpg");
+    width: 0px auto;
+    height: 140px;
+    text-align: center;
+    font-size: 20px;
+    /* line-height: 70px; */
+}
+.header ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+.header #logo{
+    width: 90px;
+    height: 120px;
+    float: left;
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+    min-height : 300px;
+    font-size: 25px; 
+}
+.column1 {
+    float: left;
+    /* width: 50%; */
+    width: 33.33%;
+    padding: 15px;
+    text-align: center;
+    color:rgb(221, 239, 23)
+  }
+.column #lightsensor{
+    color:rgb(222, 240, 30)
+}
+.column #led{
+    width: 220px;
+    height: 220px;
+    float: center;
+}
+.column #sensor{
+    width: 220px;
+    height: 220px;
+    float: center;
+}
+.column #led1{
+    width: 220px;
+    height: 220px;
+    float: center;
+}
+.column1 #figmem{
+    width: 150px;
+    height: 150px;
+    float: center;
+  }
+.progress {
+    margin: 30px auto;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.toggle-btn, .toggle-btn1{
+	width: 80px;
+	height: 40px;
+	background: gray;
+	border-radius: 30px;
+	padding:5px;
+	transition: all 300ms ease-in-out;
+}
+.toggle-btn > .inner-circle, .toggle-btn1 > .inner-circle{
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius:50%;
+	transition: all 300ms ease-in-out;
+}.toggle-btn.active{
+	background: #2169f3;
+	box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+	transition-delay: 0.5s;
+    
+    /* background: #f3219c;
+	box-shadow: 0 0 10px #f3219c, 0 0 40px #f3219c, 0 0 80px #f3219c;
+	transition-delay: 0.5s; */
+}
+.toggle-btn1.active{
+	background: #a3f321;
+	box-shadow: 0 0 10px #a3f321, 0 0 40px #a3f321, 0 0 80px #a3f321;
+	transition-delay: 0.5s;
+
+    /* background: #21ecf3;
+	box-shadow: 0 0 10px #21ecf3, 0 0 40px #21ecf3, 0 0 80px #21ecf3;
+	transition-delay: 0.5s; */
+}
+.toggle-btn.active>.inner-circle,.toggle-btn1.active>.inner-circle{
+	margin-left: 40px;
+}
+footer {
+    padding: 0.5px;
+    margin: 0px;
+    list-style: none;
+    color: rgb(232, 243, 27);
+    /* background-color: rgb(27, 200, 148); */
+    background-image: url("img/darkblue.jpg");
+    clear: left;
+}
+
+h1{
+    color: rgb(28, 21, 243);
+ }
+h2{
+    font-family: Lucida;
+    font-size: 20px;
+    color: #21ecf3;
+}
+h3 {
+    font-family: Lucida;
+    font-size: 35px;
+  }
+  
+h4{
+    font-family: Lucida;
+    text-align: left;
+    font-size: 15px;
+}
+
+
+

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Light Control</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </head>  
+<body>
+    <div class="header">
+        <ul>
+            <img src="img\HCMUTE.png" id="logo">
+            <h1><center>Senior Project 2</center></h1> 
+            <h1><center>Light Control System</center></h1>
+        </ul>   
+    </div>
+
+    <div class="row">
+        <div class="column">
+            <h3><img src="img\light_bulb_off.png" id="led">
+            <center><h3 style ="color:rgb(74, 69, 156)">LightIndoor</h3></center>
+            <div class="progress">
+                <div class= "toggle-btn" id="unact">
+                    <div class= "inner-circle">
+                    </div>
+                </div>
+                <div class= "toggle-btn active" id="act" >
+                    <div class= "inner-circle">
+                    </div>
+                </div>
+            </div>
+            </h3>
+        </div> 
+        <div class="column">
+            <h3><img src="img\lightsensor.jpg" id="sensor"></h3>
+            <h3 style ="color:rgb(208, 17, 100)">LightState: <span id="lightsensor"></span></h3>
+        </div>
+        <div class="column">
+            <h3><img src="img\ledoff.png" id="led1">
+            <center><h3 style ="color:rgb(45, 213, 23)">LightOutdoor</h3></center>
+            <div class="progress">
+                <div class= "toggle-btn1" id="unact1">
+                    <div class= "inner-circle">
+                    </div>
+                </div>
+                <div class= "toggle-btn1 active" id="act1" >
+                    <div class= "inner-circle">
+                    </div>
+                </div>
+            </div>
+            </h3>
+        </div> 
+    </div>
+
+    <div class="row1">
+        <div class="column1">
+          <h2>Member</h2>
+          <img src="img\Hung.jpg" id="figmem">
+          <h2>Hưng Nguyễn</h2>
+          <h2>ID: 19119052</h2>
+        </div>
+        <div class="column1">
+            <div id="current-time"></div>
+                <script>
+                    var curDate = new Date();
+                    var curDay = curDate.getDate();
+                    var curMonth = curDate.getMonth() + 1;
+                    var curYear = curDate.getFullYear();
+                    if (curDay < 10) 
+                    curDay = "0" + curDay;
+                    if (curMonth < 10) 
+                    curMonth = "0" + curMonth;
+                    document.getElementById('current-time').innerHTML = curDay + "/" + curMonth + "/" + curYear;
+                </script>
+            <div id="Time"> </div>
+                <script>
+                    function Time_Clock() {
+                    var time = new Date();
+                    var curHours = time.getHours();
+                    var curMinutes = time.getMinutes();
+                    var curSeconds = time.getSeconds();
+                    if (curHours < 10) 
+                        curHours = "0" + curHours;
+                    if (curMinutes < 10) 
+                        curMinutes = "0" + curMinutes;
+                    if (curSeconds < 10) 
+                        curSeconds = "0" + curSeconds;
+                    document.getElementById("Time").innerHTML = curHours + ":" + curMinutes + ":" + curSeconds;
+                    setTimeout("Time_Clock()", 1000);
+                    };
+                    Time_Clock();
+                </script>
+        </div>
+        <div class="column1">
+          <h2>Member</h2>
+          <img src="img\huy.jpg" id="figmem">
+          <h2>Huy Nguyễn</h2>
+          <h2>ID: 19119030</h2>
+        </div>
+      </div>
+
+
+<footer>
+    <center>
+        <h4>Contact: 0777xyz77x </h4>
+        <h4>Email: so1vovanngan@gmail.com </h4>
+        <h4>Address: 1, Vo Van Ngan, Linh Chieu Ward, Thu Duc District, HCM City </h4>
+    </center>
+</footer>
+</body>
+</html> 
